@@ -43,6 +43,7 @@ const News=(props)=> {
     let parsedData=await data.json();
     setArticles(articles.concat(parsedData.articles));
     setTotalResults(parsedData.totalResults);
+    setLoading(false);
     }
     return (
       <div>
